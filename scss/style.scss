@@ -40,15 +40,22 @@ div {
 
   .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 51px;
+    padding: 0 43px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
   }
 
   &__nav-list {
     display: flex;
     list-style: none;
-    gap: 51px;
+    text-align: center;
+    gap: 30px;
     padding: 0;
 
     li a {
@@ -67,6 +74,24 @@ div {
   }
 
   &__contact {
+    width: 275px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5%;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      fill: #f9e5ab;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        fill: #fff;
+        transform: scale(1.1);
+      }
+    }
+
     .btn {
       display: inline-block;
       padding: 10px 20px;
@@ -602,6 +627,32 @@ h2.title {
         }
       }
     }
+    
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+
+  }
+
+  .about { 
+    &__content {
+      img {
+        width: 50%;
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+
+    &__stats {
+      gap: 2%;
+    }
+
+    &__bottom-text {
+      width: 30%;
+      margin-left: 5%;
+    }
   }
 
   .why-us {
@@ -643,6 +694,13 @@ h2.title {
       align-items: center;
       display: flex;
       gap: 20px;
+    }
+
+    .btn {
+      text-wrap: nowrap;
+    }
+    svg {
+      flex-shrink: 0;;
     }
   }
 
@@ -712,17 +770,16 @@ h2.title {
 
   .footer {
     .container {
-      padding: 0 20px;
+      padding: 0 12px;
       gap: 20px;
     }
 
     text-align: center;
 
     &__nav-list {
-      justify-content: center;
       align-items: center;
       display: flex;
-      gap: 20px;
+      gap: 15px;
     }
   }
 }
