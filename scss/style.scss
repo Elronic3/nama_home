@@ -749,7 +749,7 @@ h2.title {
     &__nav {
       position: absolute;
       flex-direction: column;
-      gap: 30px;
+      gap: 20px;
       top: 100%;
       left: 0;
       width: 100%;
@@ -764,11 +764,10 @@ h2.title {
     }
 
     &__nav-list {
+      padding-top: 20px;
       display: flex;
       flex-direction: column;
-      padding: 0;
-      margin: 0;
-      gap: 0;
+      gap: 16px;
 
       li {
         &:nth-child(1) {
@@ -780,15 +779,15 @@ h2.title {
 
         a {
           display: block;
-          padding-top: 30px;
-          font-size: 24px;
+          padding-top: 10px;
+          font-size: 20px;
           color: #282828;
           background-color: transparent;
           transition: all 0.3s ease-in-out;
 
           &:hover {
             color: #282828;
-            font-size: 24px;
+            font-size: 20px;
           }
         }
       }
@@ -812,8 +811,11 @@ h2.title {
       }
 
       .btn {
-        font-size: 24px;
-        padding-top: 20px;
+        font-size: 20px;
+        padding: 10px 15px;
+        margin-top: 16px;
+        background-color: #282828;
+        color: #f9e5ab;
 
         &:hover {
           box-shadow: none;
@@ -974,14 +976,14 @@ h2.title {
         a {
           display: block;
           padding-top: 10px;
-          font-size: 24px;
+          font-size: 20px;
           color: #282828;
           background-color: transparent;
           transition: all 0.3s ease-in-out;
 
           &:hover {
             color: #282828;
-            font-size: 24px;
+            font-size: 20px;
           }
         }
       }
@@ -990,7 +992,6 @@ h2.title {
     &__contact {
       width: auto;
       flex-wrap: wrap;
-      // padding-top: 10px;
 
       svg {
         width: 32px;
@@ -1003,7 +1004,7 @@ h2.title {
       }
 
       .btn {
-        font-size: 24px;
+        font-size: 20px;
         padding: 10px 15px;
         margin-top: 8px;
 
@@ -1055,6 +1056,26 @@ h2.title {
         }
       }
     }
+
+    &__nav-list {
+      gap: 20px;
+
+      li a {
+        padding: 0;
+        font-size: 18px;
+      }
+    }
+
+    &__contact {
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+
+      .btn {
+        font-size: 18px;
+      }
+    }
   }
 
   h2.title {
@@ -1097,6 +1118,29 @@ h2.title {
     }
   }
 
+  .footer {
+    padding: 0;
+
+    &__nav-list {
+      gap: 20px;
+
+      li a {
+        padding: 0;
+        font-size: 18px;
+      }
+    }
+
+    &__contact {
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+
+      .btn {
+        font-size: 18px;
+      }
+    }
+  }
   
 }
 
