@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -317,11 +317,24 @@
             Відправте нам контактні дані і ми зв’яжемося з вами найближчим часом.<br>
             Або напишіть нашему менеджеру у Telegram.
           </p>
-          <form>
-            <input type="text" placeholder="Ваше ім’я" required />
-            <input type="tel" placeholder="+38" required />
+          <form id="callback-form" action="sendmail.php" method="POST">
+            <input 
+              type="text" 
+              name="name" 
+              placeholder="Ваше ім’я" 
+              required 
+            />
+            <input 
+              type="tel" 
+              name="phone" 
+              id="phone"
+              placeholder="+38"
+              value=""
+              required 
+            />
             <button type="submit" class="btn btn--post">Замовити дзвінок</button>
           </form>
+          <div id="callback-result" class="modal__result"></div>
           <div class="modal__or">або</div>
           <a href="https://t.me/darkius" target="_blank" class="btn btn--telegram">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">

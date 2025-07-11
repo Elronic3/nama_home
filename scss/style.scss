@@ -539,6 +539,10 @@ h2.title {
     position: absolute; inset: 0;
   }
 
+  &__result {
+    color: #555;
+  }
+
   &__or {
     display: flex;
     justify-content: center;
