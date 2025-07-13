@@ -739,6 +739,12 @@ h2.title {
     }
   }
 
+  .header-mobile {
+    position: relative;
+    background-color: #282828;
+    backdrop-filter: blur(5px);
+  }
+
   .container {
     padding: 0 24px;
   }
