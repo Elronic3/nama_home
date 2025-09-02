@@ -104,4 +104,23 @@ document.addEventListener("DOMContentLoaded", function () {
       this.setSelectionRange(this.value.length, this.value.length);
     });
   }
+
+  const langSwitchButtons = document.querySelectorAll(".lang-switch");
+
+  langSwitchButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      let url = window.location.pathname;
+
+      if (url.startsWith("/en/")) {
+        window.location.href = url.replace("/en/", "/");
+      } else {
+        if (url === "/") {
+          window.location.href = "/en/";
+        } else {
+          window.location.href = "/en" + url;
+        }
+      }
+    });
+  });
+  
 });

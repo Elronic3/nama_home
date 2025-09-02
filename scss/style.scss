@@ -58,17 +58,29 @@ div {
     gap: 30px;
     padding: 0;
 
-    li a {
-      text-decoration: none;
+    li { 
       color: #f9e5ab;
-      font-weight: 500;
-      font-size: 16px;
       transition: all 0.3s ease-in-out;
 
       &:hover {
         color: #fff;
         font-size: 18px;
         font-weight: 600;
+        cursor: pointer;
+      }
+
+      a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #f9e5ab;
+        font-size: 16px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          color: #fff;
+          font-size: 18px;
+          font-weight: 600;
+        }
       }
     }
   }
@@ -439,17 +451,30 @@ h2.title {
     gap: 30px;
     padding: 0;
 
-    li a {
-      text-decoration: none;
+    li  {
       color: #282828;
       font-weight: 500;
-      font-size: 16px;
       transition: all 0.3s ease-in-out;
 
       &:hover {
         color: #000;
         font-size: 18px;
         font-weight: 600;
+        cursor: pointer;
+      }
+
+      a {
+        text-decoration: none;
+        color: #282828;
+        font-weight: 500;
+        font-size: 16px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          color: #000;
+          font-size: 18px;
+          font-weight: 600;
+        }
       }
     }
   }
@@ -907,6 +932,10 @@ h2.title {
           display: block;
         }
 
+        color: #282828;
+        font-size: 20px;
+        font-weight: 600;
+
         a {
           display: block;
           padding-top: 10px;
@@ -1102,10 +1131,14 @@ h2.title {
         &:nth-child(5) {
           display: block;
         }
+        
+        padding-top: 10px;
+        color: #282828;
+        font-size: 20px;
+        font-weight: 600;
 
         a {
           display: block;
-          padding-top: 10px;
           font-size: 20px;
           color: #282828;
           background-color: transparent;
